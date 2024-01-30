@@ -38,7 +38,7 @@ class Server:
         # print(index[1])
         # print(f"len {len(datasetList)}")
 
-        if index[1] > len(datasetList) or index[0] > len(datasetList):
+        if 0 <= index[1] > len(datasetList) or index[0] > len(datasetList):
             return []
         result = [datasetList[i] for i in range(index[0], index[1])]
         return result
