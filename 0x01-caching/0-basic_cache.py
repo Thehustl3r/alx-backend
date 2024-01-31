@@ -24,6 +24,8 @@ class BasicCache(BaseCaching):
 
     def get(self, key, ):
         """method that get data in the caching system"""
+        if key is None:
+            return None
 
         try:
             self.cache_data[key]
