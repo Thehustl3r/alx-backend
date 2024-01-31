@@ -29,7 +29,7 @@ class BasicCache(BaseCaching):
 
         try:
             self.cache_data[key]
-        except IndexError:
+        except:
             return None
 
         return self.cache_data[key]
